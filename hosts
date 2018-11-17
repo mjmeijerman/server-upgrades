@@ -1,0 +1,9 @@
+[vps1]
+vps1.markmeijerman.nl   ansible_user=provision
+
+[vps2]
+vps2.markmeijerman.nl   ansible_user=provision
+
+[all:children]
+vps1
+vps2

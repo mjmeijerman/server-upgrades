@@ -1,0 +1,23 @@
+- name: Query servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: PHP version
+      command: php -v
+      register: php_version
+      ignore_errors: true
+
+    - name: Firewall allowed ports
+      command: ufw status verbose
+      register: firewall_allowed_ports
+      ignore_errors: true
+
+    - name: Listening ports
+      command: netstat -tulpn
+      register: listening_ports
+      ignore_errors: true
+
+    - template: src=server_information.j2 dest=./facts/{{ inventory_hostname}}
+      delegate_to: localhost
+      become: no

@@ -1,0 +1,19 @@
+Hostname {{ ansible_nodename }}
+Network: {{ ansible_default_ipv4.address }} ({{ ansible_default_ipv4.alias }})
+OS: {{ ansible_distribution }} {{ ansible_distribution_version }}
+
+IPv4 addresses:
+{{ ansible_all_ipv4_addresses|to_nice_yaml }}
+IPv6 addresses:
+{{ ansible_all_ipv6_addresses|to_nice_yaml }}
+PHP version:
+------------
+{{ php_version.stdout|default('PHP not installed') }}
+
+Firewall allowed ports:
+------------
+{{ firewall_allowed_ports.stdout|default('Error detecting firewall allowed ports') }}
+
+Listening ports:
+------------
+{{ listening_ports.stdout|default('Error detecting listening ports') }}

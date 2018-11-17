@@ -1,0 +1,32 @@
+- name: provision ssh keys
+  hosts: "all"
+  become: yes
+
+  tasks:
+    - name: Check if provision user exists for this server
+      stat:
+        path: /home/provision
+      register: folder
+
+    - name: Write ssh authorized keys for provision user
+      template:
+        src: "../templates/authorized_keys.j2"
+        dest: "/home/provision/.ssh/authorized_keys"
+        owner: provision
+        group: provision
+        mode: 0600
+      when: folder.stat.exists
+
+    - name: Check if deploy user exists for this server
+      stat:
+        path: /home/deploy
+      register: folder
+
+    - name: Write ssh authorized keys for deploy user
+      template:
+        src: "../templates/authorized_keys.j2"
+        dest: "/home/deploy/.ssh/authorized_keys"
+        owner: deploy
+        group: deploy
+        mode: 0600
+      when: folder.stat.exists
