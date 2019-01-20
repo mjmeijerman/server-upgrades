@@ -1,7 +1,0 @@
----
-
-wordpress_sites:
-    - user: bloemschikwinkel
-      path: /home/bloemschikwinkel/projects/bloemschikwinkel
-    - user: bloemschikwinkel
-      path: /home/bloemschikwinkel/projects/fleurall

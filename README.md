@@ -42,3 +42,13 @@ Where group is one of:
  - vps1
  - vps2
  - all
+
+
+Upgrade PHP
+===========
+
+When upgrading to a new version of php, you need to clean up old php packages
+
+To list installes packages, use `dpkg --get-selections | grep php`.
+
+To remove old installed packages, use `sudo apt-get remove --purge php5-pear php5-cli ...`
