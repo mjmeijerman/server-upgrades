@@ -30,3 +30,14 @@
         group: deploy
         mode: 0600
       when: folder.stat.exists
+
+#    - name: Check if php is installed
+#      shell: "which php"
+#      register: is_php_installed
+#      failed_when: false
+#
+#    - name: Add the deb.sury.org trusted key
+#      apt_key:
+#        id: 95BD4743
+#        url: https://packages.sury.org/php/apt.gpg
+#      when: is_php_installed.rc == 0
