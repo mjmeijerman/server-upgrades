@@ -18,6 +18,11 @@
       register: listening_ports
       ignore_errors: true
 
+    - name: Listening upgradable packages
+      command: apt list --upgradable
+      register: upgradable_packages
+      ignore_errors: true
+
     - template: src=server_information.j2 dest=./facts/{{ inventory_hostname}}
       delegate_to: localhost
       become: no

@@ -17,3 +17,7 @@ Firewall allowed ports:
 Listening ports:
 ------------
 {{ listening_ports.stdout|default('Error detecting listening ports') }}
+
+Upgradable packages:
+------------
+{{ upgradable_packages.stdout|default('Error detecting upgradable packages') }}
