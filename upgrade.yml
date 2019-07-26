@@ -8,7 +8,7 @@
 
     - name: Update composer
       command: /usr/local/bin/composer selfupdate
-      when: wordpress_sites
+      when: wordpress_sites | bool
       tags: [ wordpress ]
 
     - name: Update wp-cli
