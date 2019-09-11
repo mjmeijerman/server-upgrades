@@ -6,10 +6,22 @@
     - name: Update packages
       apt: upgrade=yes update_cache=yes autoremove=yes autoclean=yes
 
+    - name: Check if composer is installed
+      shell: "which composer"
+      register: is_composer_installed
+      failed_when: false
+
     - name: Update composer
-      command: /usr/local/bin/composer selfupdate
-      when: wordpress_sites | bool
-      tags: [ wordpress ]
+      command: composer selfupdate
+      when: is_composer_installed.rc == 0
+
+    - name: Register php version
+      shell: 'php -v|grep --only-matching --perl-regexp "PHP \\d+\.\\d" | cut -d" " -f 2'
+      register: restart_php_version
+
+    - name: Restart php fpm
+      command: "service php{{ restart_php_version.stdout }}-fpm restart"
+      when: restart_php_version.stdout != ""
 
     - name: Update wp-cli
       command: composer update chdir={{ item.path }}
