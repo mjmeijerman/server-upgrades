@@ -51,4 +51,4 @@ When upgrading to a new version of php, you need to clean up old php packages
 
 To list installed php packages, use `apt list --installed php*`.
 
-To remove old installed packages, use `sudo apt-get remove --purge php5-pear php5-cli ...`
+To remove old installed packages, use `sudo apt-get remove --purge php7.3*`
