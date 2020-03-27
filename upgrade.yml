@@ -20,7 +20,9 @@
       register: restart_php_version
 
     - name: Restart php fpm
-      command: "service php{{ restart_php_version.stdout }}-fpm restart"
+      service:
+        name: php{{ restart_php_version.stdout }}-fpm
+        state: restarted
       when: restart_php_version.stdout != ""
 
     - name: Update wp-cli

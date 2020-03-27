@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 7.4.1 (cli) (built: Dec 18 2019 15:00:01) ( NTS )
+PHP 7.4.4 (cli) (built: Mar 20 2020 14:30:40) ( NTS )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
-    with Zend OPcache v7.4.1, Copyright (c), by Zend Technologies
+    with Zend OPcache v7.4.4, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,13 +35,13 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      11684/mysqld        
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      9047/mysqld         
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      28847/memcached     
 tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      4022/nginx: master  
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1286/sshd           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      7148/sshd           
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      5561/exim4          
 tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      4022/nginx: master  
-tcp6       0      0 :::22                   :::*                    LISTEN      1286/sshd           
+tcp6       0      0 :::22                   :::*                    LISTEN      7148/sshd           
 tcp6       0      0 ::1:25                  :::*                    LISTEN      5561/exim4          
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           531/dhclient        
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           407/dhclient        
