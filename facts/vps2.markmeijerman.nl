@@ -1,6 +1,6 @@
 Hostname QQZG002
 Network: 5.79.109.181 (eth0)
-OS: Debian 9.12
+OS: Debian 9.13
 
 IPv4 addresses:
 - 5.79.109.181
@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 7.2.29-1+0~20200320.39+debian9~1.gbp513c2e (cli) (built: Mar 20 2020 14:32:09) ( NTS )
+PHP 7.2.33-1+0~20200807.47+debian9~1.gbpcb3068 (cli) (built: Aug  7 2020 14:55:55) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
-    with Zend OPcache v7.2.29-1+0~20200320.39+debian9~1.gbp513c2e, Copyright (c) 1999-2018, by Zend Technologies
+    with Zend OPcache v7.2.33-1+0~20200807.47+debian9~1.gbpcb3068, Copyright (c) 1999-2018, by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,14 +35,14 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      3796/mysqld         
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      7379/mysqld         
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      23182/memcached     
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      20716/nginx: worker 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      6336/nginx: master  
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2732/sshd           
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      9809/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      20716/nginx: worker 
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      15818/exim4         
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      6336/nginx: master  
 tcp6       0      0 :::22                   :::*                    LISTEN      2732/sshd           
-tcp6       0      0 ::1:25                  :::*                    LISTEN      9809/exim4          
+tcp6       0      0 ::1:25                  :::*                    LISTEN      15818/exim4         
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           515/dhclient        
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           408/dhclient        
 udp        0      0 5.79.109.181:123        0.0.0.0:*                           22007/ntpd          
