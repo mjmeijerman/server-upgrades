@@ -24,38 +24,3 @@
         name: php{{ restart_php_version.stdout }}-fpm
         state: restarted
       when: restart_php_version.stdout != ""
-
-    - name: Update wp-cli
-      command: composer update chdir={{ item.path }}
-      become_user: '{{ item.user }}'
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]
-
-    - name: Update wordpress core
-      command: vendor/bin/wp core update chdir={{ item.path }}
-      become_user: '{{ item.user }}'
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]
-
-    - name: Update wordpress plugins
-      command: vendor/bin/wp plugin update --all chdir={{ item.path }}
-      become_user: '{{ item.user }}'
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]
-
-    - name: Update wordpress themes
-      command: vendor/bin/wp theme update --all chdir={{ item.path }}
-      become_user: '{{ item.user }}'
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]
-
-    - name: Disable the JSON api
-      command: vendor/bin/wp plugin install disable-json-api --activate chdir={{ item.path }}
-      become_user: '{{ item.user }}'
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]
-
-    - name: Remove unwanted wordpress file readme.html
-      file: path={{ item.path }}/readme.html state=absent
-      with_items: '{{ wordpress_sites }}'
-      tags: [ wordpress ]

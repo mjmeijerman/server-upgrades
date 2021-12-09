@@ -3,10 +3,78 @@
   become: yes
 
   tasks:
+    - name: Set the last checked at timestamp
+      ansible.builtin.set_fact:
+        last_checked_at_timestamp: "{{ ansible_date_time.date ~ ' ' ~ ansible_date_time.hour ~ ':' ~ ansible_date_time.minute }}"
+
     - name: PHP version
       command: php -v
       register: php_version
       ignore_errors: true
+
+    - name: Short PHP version
+      command: php -r "echo PHP_VERSION;"
+      register: short_php_version
+      ignore_errors: true
+
+    - name: Composer version
+      command: composer --version
+      register: composer_version
+      ignore_errors: true
+      become: no
+
+    - name: MariaDB version
+      command: "mysqld --version"
+      register: mariadb_version
+      ignore_errors: true
+
+    - name: Debian version
+      command: "cat /etc/debian_version"
+      register: debian_version
+      ignore_errors: true
+
+    - name: RabbitMQ version
+      command: "rabbitmqctl --version"
+      register: rabbitmq_version
+      ignore_errors: true
+
+    - name: Erlang version
+      command: "erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell"
+      register: erlang_version
+      ignore_errors: true
+
+    - name: Nginx version
+      command: "nginx -v"
+      register: nginx_version
+      ignore_errors: true
+
+    - name: Prepare the markdown line in a variable (for readbility)
+      ansible.builtin.set_fact:
+        enter_the_matrix_neo: >
+          {{ inventory_hostname }}
+          | {{ last_checked_at_timestamp }}
+          | {{ debian_version.stdout }}
+          | {{ mariadb_version.stdout | replace('mysqld  Ver ', '') | trim | split('-') | first }}
+          | {{ short_php_version.stdout }}
+          | {{ nginx_version.stderr | split('/') | last }}
+          | {{ composer_version.stdout | replace('Composer version', '') | trim | split(' ') | first }}
+          | {{ rabbitmq_version.stdout }}
+          | {{ erlang_version.stdout | replace('"', '') }}
+          | {{ elasticsearch_version.json.version.number | default('') }}
+
+    - name: Debug
+      debug: var=enter_the_matrix_neo
+
+    - name: Write the version matrix
+      ansible.builtin.lineinfile:
+        dest: facts/version_matrix.md
+        search_string: "{{ inventory_hostname }}"
+        line: "{{ enter_the_matrix_neo | trim }}"
+        state: present
+        backup: no
+      delegate_to: localhost
+      become: no
+      throttle: 1
 
     - name: Firewall allowed ports
       command: ufw status verbose
@@ -18,7 +86,7 @@
       register: listening_ports
       ignore_errors: true
 
-    - name: Listening upgradable packages
+    - name: Upgradable packages
       command: apt list --upgradable
       register: upgradable_packages
       ignore_errors: true
