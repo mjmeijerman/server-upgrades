@@ -1,4 +1,4 @@
-Hostname QQZG002
+Hostname VM-63aeb748-d3d0-4920-8367-c849cd2f3bf1
 Network: 5.79.109.181 (eth0)
 OS: Debian 9.13
 
@@ -35,16 +35,16 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      10612/mysqld        
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      23182/memcached     
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      13261/nginx: master 
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2732/sshd           
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      29004/exim4         
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      13261/nginx: master 
-tcp6       0      0 :::22                   :::*                    LISTEN      2732/sshd           
-tcp6       0      0 ::1:25                  :::*                    LISTEN      29004/exim4         
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           515/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           408/dhclient        
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      731/sshd            
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1308/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      741/nginx: master p 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      886/mysqld          
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      718/memcached       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      741/nginx: master p 
+tcp6       0      0 :::22                   :::*                    LISTEN      731/sshd            
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1308/exim4          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           573/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           474/dhclient        
 
 Upgradable packages:
 ------------

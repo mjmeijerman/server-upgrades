@@ -1,6 +1,6 @@
-Hostname QQZG001
+Hostname vps1.markmeijerman.nl
 Network: 5.79.100.71 (eth0)
-OS: Debian 10
+OS: Debian 11
 
 IPv4 addresses:
 - 5.79.100.71
@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 7.4.26 (cli) (built: Nov 22 2021 09:47:04) ( NTS )
+PHP 8.1.0 (cli) (built: Nov 25 2021 20:48:52) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v3.4.0, Copyright (c) Zend Technologies
-    with Zend OPcache v7.4.26, Copyright (c), by Zend Technologies
+Zend Engine v4.1.0, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.0, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,20 +35,21 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      28026/beam.smp      
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      29625/mysqld        
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      28847/memcached     
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      8531/nginx: master  
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      7148/sshd           
-tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      28026/beam.smp      
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      22818/exim4         
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      8531/nginx: master  
-tcp6       0      0 :::5672                 :::*                    LISTEN      28026/beam.smp      
-tcp6       0      0 :::4369                 :::*                    LISTEN      1/systemd           
-tcp6       0      0 :::22                   :::*                    LISTEN      7148/sshd           
-tcp6       0      0 ::1:25                  :::*                    LISTEN      22818/exim4         
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           531/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           407/dhclient        
+tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      791/beam.smp        
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      3797/mariadbd       
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      787/memcached       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      803/nginx: master p 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      809/sshd: /usr/sbin 
+tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      791/beam.smp        
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1688/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      803/nginx: master p 
+tcp6       0      0 :::5672                 :::*                    LISTEN      791/beam.smp        
+tcp6       0      0 :::4369                 :::*                    LISTEN      1/init              
+tcp6       0      0 :::22                   :::*                    LISTEN      809/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1688/exim4          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           649/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           536/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           438/dhclient        
 
 Upgradable packages:
 ------------
