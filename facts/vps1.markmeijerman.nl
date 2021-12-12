@@ -35,16 +35,11 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      791/beam.smp        
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      3797/mariadbd       
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      787/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      803/nginx: master p 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      323319/nginx: maste 
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      809/sshd: /usr/sbin 
-tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      791/beam.smp        
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1688/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      803/nginx: master p 
-tcp6       0      0 :::5672                 :::*                    LISTEN      791/beam.smp        
-tcp6       0      0 :::4369                 :::*                    LISTEN      1/init              
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      323319/nginx: maste 
 tcp6       0      0 :::22                   :::*                    LISTEN      809/sshd: /usr/sbin 
 tcp6       0      0 ::1:25                  :::*                    LISTEN      1688/exim4          
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           649/dhclient        

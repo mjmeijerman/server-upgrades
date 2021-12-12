@@ -1,6 +1,6 @@
-Hostname VM-63aeb748-d3d0-4920-8367-c849cd2f3bf1
+Hostname vps2.markmeijerman.nl
 Network: 5.79.109.181 (eth0)
-OS: Debian 9.13
+OS: Debian 11
 
 IPv4 addresses:
 - 5.79.109.181
@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 7.2.34-28+0~20211119.67+debian9~1.gbpf24e81 (cli) (built: Nov 19 2021 06:42:03) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
-    with Zend OPcache v7.2.34-28+0~20211119.67+debian9~1.gbpf24e81, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.1.0 (cli) (built: Nov 25 2021 20:48:52) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.0, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.0, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,17 +35,20 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      731/sshd            
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1308/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      741/nginx: master p 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      886/mysqld          
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      718/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      741/nginx: master p 
-tcp6       0      0 :::22                   :::*                    LISTEN      731/sshd            
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1308/exim4          
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           573/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           474/dhclient        
+tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      50580/beam.smp      
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      781/exim4           
+tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      50580/beam.smp      
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      17296/mariadbd      
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      50251/memcached     
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      50069/nginx: master 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      537/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      781/exim4           
+tcp6       0      0 :::5672                 :::*                    LISTEN      50580/beam.smp      
+tcp6       0      0 :::4369                 :::*                    LISTEN      1/init              
+tcp6       0      0 :::22                   :::*                    LISTEN      537/sshd: /usr/sbin 
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           354/dhclient        
 
 Upgradable packages:
 ------------
 Listing...
+guile-2.2-libs/stable 2.2.7+1-6 amd64 [upgradable from: 2.2.4+1-2+deb10u1]
