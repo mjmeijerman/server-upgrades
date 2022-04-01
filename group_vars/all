@@ -4,3 +4,4 @@ wordpress_sites: []
 
 ssh_keys:
   mark: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDv825o0Il7+7qu8utK4ayZMndqfNkiLXGhZw+soAaqkfaXg43RWHowaKXQIaVmsnQGAL1QpCbYYIoCATG9sVCfN24j4St4pvUb/NI+4+IBrnRBoiQDzWeX3BtcGvE0G0QS6sFt6DamBqwnPd2DhzmYAI3i2EBTDMrbE7+oPCruMnVCDyWC7R2KC+nSW5N3l/qAQV5rvyXVji5/A+dsjY+k37LXRMQlMTEA0ypPMO+gWhJqyrhw/gWmqloRJ88zgXKj91HU/+IKvPurPQNMsn/2SnyO3G7FimIr2hncXJmEB7E7GBehC83+rzHM2bQQM26HmBskOFDB7O3KCTAgGaPf mark@Marks-MacBook-Pro.local"
+  github-actions: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHaAYtjoN78yjsBMZA2/rg4V1rtWOHwZbGPftGxXKQyR markmeijerman@hotmail.com"
