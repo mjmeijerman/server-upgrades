@@ -35,20 +35,21 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      451659/beam.smp     
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      781/exim4           
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      2112984/nginx: mast 
-tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      451659/beam.smp     
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      389216/mariadbd     
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      50251/memcached     
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      2112984/nginx: mast 
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      537/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      781/exim4           
-tcp6       0      0 :::5672                 :::*                    LISTEN      451659/beam.smp     
-tcp6       0      0 :::4369                 :::*                    LISTEN      1/systemd           
-tcp6       0      0 :::22                   :::*                    LISTEN      537/sshd: /usr/sbin 
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           354/dhclient        
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      609/sshd: /usr/sbin 
+tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      594/beam.smp        
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1362/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      301810/nginx: maste 
+tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      594/beam.smp        
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1019/mariadbd       
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      591/memcached       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      301810/nginx: maste 
+tcp6       0      0 :::22                   :::*                    LISTEN      609/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1362/exim4          
+tcp6       0      0 :::5672                 :::*                    LISTEN      594/beam.smp        
+tcp6       0      0 :::4369                 :::*                    LISTEN      1/init              
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           428/dhclient        
 
 Upgradable packages:
 ------------
 Listing...
+zlib1g/stable-security 1:1.2.11.dfsg-2+deb11u1 amd64 [upgradable from: 1:1.2.11.dfsg-2]
