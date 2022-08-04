@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.5 (cli) (built: Apr 22 2022 04:56:05) (NTS)
+PHP 8.1.8 (cli) (built: Jul 11 2022 08:55:24) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.5, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.5, Copyright (c), by Zend Technologies
+Zend Engine v4.1.8, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.8, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,13 +35,13 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      802/sshd: /usr/sbin 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      143859/sshd: /usr/s 
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1477/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      2325109/nginx: mast 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      2266037/mariadbd    
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      592011/nginx: maste 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      602011/mariadbd     
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      781/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      2325109/nginx: mast 
-tcp6       0      0 :::22                   :::*                    LISTEN      802/sshd: /usr/sbin 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      592011/nginx: maste 
+tcp6       0      0 :::22                   :::*                    LISTEN      143859/sshd: /usr/s 
 tcp6       0      0 ::1:25                  :::*                    LISTEN      1477/exim4          
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           652/dhclient        
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           538/dhclient        
