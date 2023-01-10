@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.11 (cli) (built: Sep 29 2022 22:17:15) (NTS)
+PHP 8.1.14 (cli) (built: Jan  7 2023 08:31:12) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.11, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.11, Copyright (c), by Zend Technologies
+Zend Engine v4.1.14, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.14, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -38,11 +38,11 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1159096/sshd: /usr/ 
 tcp        0      0 0.0.0.0:15672           0.0.0.0:*               LISTEN      594/beam.smp        
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1362/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1153832/nginx: mast 
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      240436/nginx: maste 
 tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN      594/beam.smp        
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1600453/mariadbd    
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      256453/mariadbd     
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      591/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1153832/nginx: mast 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      240436/nginx: maste 
 tcp6       0      0 :::22                   :::*                    LISTEN      1159096/sshd: /usr/ 
 tcp6       0      0 ::1:25                  :::*                    LISTEN      1362/exim4          
 tcp6       0      0 :::5672                 :::*                    LISTEN      594/beam.smp        
@@ -52,37 +52,37 @@ udp        0      0 0.0.0.0:68              0.0.0.0:*                           
 Upgradable packages:
 ------------
 Listing...
-erlang-asn1/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-base/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-common-test/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-crypto/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-debugger/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-dev/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-dialyzer/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-diameter/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-edoc/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-eldap/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-erl-docgen/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-et/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-eunit/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-examples/bullseye 1:25.1.1-1 all [upgradable from: 1:23.2.6+dfsg-1]
-erlang-ftp/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-inets/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-megaco/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-mnesia/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-observer/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-odbc/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-os-mon/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-parsetools/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-public-key/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-reltool/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-runtime-tools/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-snmp/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-src/bullseye 1:25.1.1-1 all [upgradable from: 1:23.2.6+dfsg-1]
-erlang-ssh/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-ssl/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-syntax-tools/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-tftp/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-tools/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-wx/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
-erlang-xmerl/bullseye 1:25.1.1-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-asn1/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-base/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-common-test/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-crypto/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-debugger/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-dev/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-dialyzer/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-diameter/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-edoc/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-eldap/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-erl-docgen/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-et/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-eunit/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-examples/bullseye 1:25.2-1 all [upgradable from: 1:23.2.6+dfsg-1]
+erlang-ftp/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-inets/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-megaco/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-mnesia/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-observer/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-odbc/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-os-mon/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-parsetools/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-public-key/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-reltool/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-runtime-tools/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-snmp/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-src/bullseye 1:25.2-1 all [upgradable from: 1:23.2.6+dfsg-1]
+erlang-ssh/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-ssl/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-syntax-tools/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-tftp/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-tools/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-wx/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]
+erlang-xmerl/bullseye 1:25.2-1 amd64 [upgradable from: 1:23.2.6+dfsg-1]

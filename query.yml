@@ -57,7 +57,7 @@
           | {{ mariadb_version.stdout | replace('mysqld  Ver ', '') | trim | split('-') | first }}
           | {{ short_php_version.stdout }}
           | {{ nginx_version.stderr | split('/') | last }}
-          | {{ composer_version.stdout | replace('Composer', '') | trim | split(' ') | first }}
+          | {{ composer_version.stdout | replace('Composer version', '') | trim | split(' ') | first }}
           | {{ rabbitmq_version.stdout }}
           | {{ erlang_version.stdout | replace('"', '') }}
           | {{ elasticsearch_version.json.version.number | default('') }}
