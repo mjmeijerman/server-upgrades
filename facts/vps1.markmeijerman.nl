@@ -10,7 +10,7 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.14 (cli) (built: Jan  7 2023 08:31:12) (NTS)
+PHP 8.1.14 (cli) (built: Jan 13 2023 10:38:02) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.14, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.14, Copyright (c), by Zend Technologies
