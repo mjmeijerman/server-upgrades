@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.14 (cli) (built: Jan 13 2023 10:38:02) (NTS)
+PHP 8.1.16 (cli) (built: Feb 14 2023 18:28:06) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.14, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.14, Copyright (c), by Zend Technologies
+Zend Engine v4.1.16, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.16, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,17 +35,17 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      143859/sshd: /usr/s 
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1477/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      3382327/nginx: mast 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      3392364/mariadbd    
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      781/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      3382327/nginx: mast 
-tcp6       0      0 :::22                   :::*                    LISTEN      143859/sshd: /usr/s 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1477/exim4          
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           652/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           538/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           432/dhclient        
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      778/sshd: /usr/sbin 
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1456/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      797/nginx: master p 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      284635/mariadbd     
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      761/memcached       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      797/nginx: master p 
+tcp6       0      0 :::22                   :::*                    LISTEN      778/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1456/exim4          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           636/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           575/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           438/dhclient        
 
 Upgradable packages:
 ------------
