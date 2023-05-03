@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.17 (cli) (built: Mar 16 2023 14:37:38) (NTS)
+PHP 8.1.18 (cli) (built: Apr 14 2023 04:39:46) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.17, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.17, Copyright (c), by Zend Technologies
+Zend Engine v4.1.18, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.18, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -35,17 +35,17 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      772/sshd: /usr/sbin 
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1447/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      57683/nginx: master 
 tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1026/mariadbd       
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      756/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      784/nginx: master p 
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      765/sshd: /usr/sbin 
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1450/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      784/nginx: master p 
-tcp6       0      0 :::22                   :::*                    LISTEN      765/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1450/exim4          
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           635/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           541/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           436/dhclient        
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      753/memcached       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      57683/nginx: master 
+tcp6       0      0 :::22                   :::*                    LISTEN      772/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1447/exim4          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           636/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           530/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           438/dhclient        
 
 Upgradable packages:
 ------------
