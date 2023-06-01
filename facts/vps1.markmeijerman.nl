@@ -10,7 +10,7 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.18 (cli) (built: Apr 14 2023 04:39:46) (NTS)
+PHP 8.1.18 (cli) (built: May 17 2023 15:59:20) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.18, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.18, Copyright (c), by Zend Technologies
@@ -38,7 +38,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      772/sshd: /usr/sbin 
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1447/exim4          
 tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      57683/nginx: master 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1026/mariadbd       
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      539536/mariadbd     
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      753/memcached       
 tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      57683/nginx: master 
 tcp6       0      0 :::22                   :::*                    LISTEN      772/sshd: /usr/sbin 
