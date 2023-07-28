@@ -24,3 +24,72 @@
         name: php{{ restart_php_version.stdout }}-fpm
         state: restarted
       when: restart_php_version.stdout != ""
+
+    - name: Start supervisor workers
+      command: "supervisorctl start all"
+      ignore_errors: true
+
+    - name: Update wp-cli
+      command: composer update chdir=/home/websites
+      become_user: '{{ wordpress_cli_user }}'
+      when: 'wordpress_sites is defined and wordpress_cli_user is defined'
+      tags: [ wordpress ]
+
+    - name: Update wordpress core
+      command: ../vendor/bin/wp core update chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Update wordpress plugins
+      command: ../vendor/bin/wp plugin update --all chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Update wordpress themes
+      command: ../vendor/bin/wp theme update --all chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Update wordpress core translations
+      command: ../vendor/bin/wp language core update chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Update wordpress plugin translations
+      command: ../vendor/bin/wp language plugin update --all chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Update wordpress theme translations
+      command: ../vendor/bin/wp language theme update --all chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Disable the JSON api
+      command: ../vendor/bin/wp plugin install disable-json-api --activate chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Disable XML-RPC
+      command: ../vendor/bin/wp plugin install disable-xml-rpc --activate chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Install WordFence
+      command: ../vendor/bin/wp plugin install wordfence --activate chdir={{ item.path }}
+      become_user: '{{ item.user }}'
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]
+
+    - name: Remove unwanted wordpress file readme.html
+      file: path={{ item.path }}/readme.html state=absent
+      with_items: '{{ wordpress_sites }}'
+      tags: [ wordpress ]

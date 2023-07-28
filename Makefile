@@ -8,6 +8,11 @@ upgrade-servers:
 	@read -p "Enter host, choose one of vps1, vps2, all: " host; \
     ansible-playbook upgrade.yml -i hosts --limit $$host
 
+## upgrade-wordpress-sites-only:	Upgrade the wordpress sites on the poolz-websites host
+.PHONY: upgrade-wordpress-sites-only
+upgrade-wordpress-sites-only:
+	ansible-playbook upgrade.yml -i hosts --tags wordpress --limit vps1
+
 ## query-servers:	Get information of all servers, will be stored in facts
 .PHONY: query-servers
 query-servers:
