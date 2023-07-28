@@ -10,10 +10,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.1.21 (cli) (built: Jul 16 2023 11:00:45) (NTS)
+PHP 8.2.8 (cli) (built: Jul 16 2023 11:01:56) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.21, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.21, Copyright (c), by Zend Technologies
+Zend Engine v4.2.8, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -37,10 +37,10 @@ Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      772/sshd: /usr/sbin 
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1447/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1540135/nginx: mast 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1565869/mariadbd    
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1595327/nginx: mast 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1571362/mariadbd    
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      753/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1540135/nginx: mast 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1595327/nginx: mast 
 tcp6       0      0 :::22                   :::*                    LISTEN      772/sshd: /usr/sbin 
 tcp6       0      0 ::1:25                  :::*                    LISTEN      1447/exim4          
 udp        0      0 0.0.0.0:68              0.0.0.0:*                           636/dhclient        
