@@ -35,17 +35,17 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      772/sshd: /usr/sbin 
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1447/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1595327/nginx: mast 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1571362/mariadbd    
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      753/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1595327/nginx: mast 
-tcp6       0      0 :::22                   :::*                    LISTEN      772/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1447/exim4          
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           636/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           530/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           438/dhclient        
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      808/nginx: master p 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      801/sshd: /usr/sbin 
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1480/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      808/nginx: master p 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1056/mariadbd       
+tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      787/memcached       
+tcp6       0      0 :::22                   :::*                    LISTEN      801/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1480/exim4          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           658/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           555/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           433/dhclient        
 
 Upgradable packages:
 ------------

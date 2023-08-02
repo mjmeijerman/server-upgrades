@@ -35,18 +35,16 @@ Listening ports:
 ------------
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      615/sshd: /usr/sbin 
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1341/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      2806701/nginx: mast 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      2891130/mariadbd    
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1312/exim4          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      614/nginx: master p 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1025/mariadbd       
 tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      592/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      2806701/nginx: mast 
-tcp6       0      0 :::22                   :::*                    LISTEN      615/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1341/exim4          
-tcp6       0      0 :::443                  :::*                    LISTEN      2806701/nginx: mast 
-tcp6       0      0 :::80                   :::*                    LISTEN      2806701/nginx: mast 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      614/nginx: master p 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      620/sshd: /usr/sbin 
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1312/exim4          
 tcp6       0      0 :::4369                 :::*                    LISTEN      1/systemd           
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           428/dhclient        
+tcp6       0      0 :::22                   :::*                    LISTEN      620/sshd: /usr/sbin 
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           427/dhclient        
 
 Upgradable packages:
 ------------
