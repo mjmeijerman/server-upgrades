@@ -1,16 +1,17 @@
 Hostname vps2.markmeijerman.nl
 Network: 5.79.109.181 (eth0)
-OS: Debian 11
+OS: Debian 12.1
 
 IPv4 addresses:
 - 5.79.109.181
 
 IPv6 addresses:
+- '2001:1af8:4700:a123:3::'
 - fe80::496:60ff:fe00:15bd
 
 PHP version:
 ------------
-PHP 8.2.8 (cli) (built: Jul 16 2023 11:01:56) (NTS)
+PHP 8.2.8 (cli) (built: Aug 15 2023 09:51:33) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.2.8, Copyright (c) Zend Technologies
     with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies
@@ -33,18 +34,7 @@ To                         Action      From
 
 Listening ports:
 ------------
-Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1312/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      614/nginx: master p 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1025/mariadbd       
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      592/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      614/nginx: master p 
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      620/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1312/exim4          
-tcp6       0      0 :::4369                 :::*                    LISTEN      1/systemd           
-tcp6       0      0 :::22                   :::*                    LISTEN      620/sshd: /usr/sbin 
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           427/dhclient        
+
 
 Upgradable packages:
 ------------

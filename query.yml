@@ -24,7 +24,7 @@
       become: no
 
     - name: MariaDB version
-      command: "mysqld --version"
+      command: "mariadb --version"
       register: mariadb_version
       ignore_errors: true
 
@@ -54,7 +54,7 @@
           | {{ inventory_hostname }}
           | {{ last_checked_at_timestamp }}
           | {{ debian_version.stdout }}
-          | {{ mariadb_version.stdout | replace('mysqld  Ver ', '') | trim | split('-') | first }}
+          | {{ mariadb_version.stdout | replace('mariadb from ', '') | trim | split('-') | first }}
           | {{ short_php_version.stdout }}
           | {{ nginx_version.stderr | split('/') | last }}
           | {{ composer_version.stdout | replace('Composer version', '') | trim | split(' ') | first }}
