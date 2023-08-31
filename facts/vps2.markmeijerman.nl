@@ -11,10 +11,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.2.8 (cli) (built: Aug 15 2023 09:51:33) (NTS)
+PHP 8.2.9 (cli) (built: Aug 29 2023 10:47:44) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.2.8, Copyright (c) Zend Technologies
-    with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies
+Zend Engine v4.2.9, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.9, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------

@@ -70,6 +70,7 @@
       become_user: '{{ item.user }}'
       with_items: '{{ wordpress_sites }}'
       tags: [ wordpress ]
+      failed_when: false
 
     - name: Remove unwanted wordpress file readme.html
       file: path={{ item.path }}/readme.html state=absent

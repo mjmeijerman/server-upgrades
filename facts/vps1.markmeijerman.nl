@@ -1,6 +1,6 @@
 Hostname vps1.markmeijerman.nl
 Network: 5.79.100.71 (eth0)
-OS: Debian 11
+OS: Debian 12.1
 
 IPv4 addresses:
 - 5.79.100.71
@@ -11,10 +11,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.2.8 (cli) (built: Aug 15 2023 09:55:25) (NTS)
+PHP 8.2.9 (cli) (built: Aug 29 2023 10:47:44) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.2.8, Copyright (c) Zend Technologies
-    with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies
+Zend Engine v4.2.9, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.9, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
@@ -34,21 +34,7 @@ To                         Action      From
 
 Listening ports:
 ------------
-Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      939/sshd: /usr/sbin 
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1631/exim4          
-tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      20398/nginx: master 
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      382190/mariadbd     
-tcp        0      0 127.0.0.1:11211         0.0.0.0:*               LISTEN      921/memcached       
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      20398/nginx: master 
-tcp6       0      0 :::22                   :::*                    LISTEN      939/sshd: /usr/sbin 
-tcp6       0      0 ::1:25                  :::*                    LISTEN      1631/exim4          
-tcp6       0      0 :::443                  :::*                    LISTEN      20398/nginx: master 
-tcp6       0      0 :::80                   :::*                    LISTEN      20398/nginx: master 
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           653/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           539/dhclient        
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           439/dhclient        
+
 
 Upgradable packages:
 ------------
