@@ -1,6 +1,6 @@
 Hostname vps1.markmeijerman.nl
 Network: 5.79.100.71 (eth0)
-OS: Debian 12.8
+OS: Debian 12.9
 
 IPv4 addresses:
 - 5.79.100.71
@@ -11,10 +11,10 @@ IPv6 addresses:
 
 PHP version:
 ------------
-PHP 8.3.15 (cli) (built: Dec 24 2024 06:13:33) (NTS)
+PHP 8.3.17 (cli) (built: Feb 15 2025 09:04:04) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.3.15, Copyright (c) Zend Technologies
-    with Zend OPcache v8.3.15, Copyright (c), by Zend Technologies
+Zend Engine v4.3.17, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.17, Copyright (c), by Zend Technologies
 
 Firewall allowed ports:
 ------------
